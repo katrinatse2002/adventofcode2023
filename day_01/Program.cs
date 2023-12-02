@@ -4,7 +4,47 @@ namespace Day01
 {
     class Program
     {
+
         static void Main(string[] args)
+        {
+            int part1Ans = Part01();
+            int part2Ans = Part02();
+
+            Console.WriteLine("Part 1 Answer: " + part1Ans.ToString());
+            Console.WriteLine("Part 2 Answer: " + part2Ans.ToString());
+
+        }
+        
+        static int Part01()
+        {
+            string filePath = @"C:\Users\ttse\adventofcode2023\day_01\Day01Input.txt";
+            IEnumerable<string> inputList = File.ReadLines(filePath);
+            IList<int> answerList = [];
+            int answerSum = 0;
+
+            foreach (string input in inputList)
+            {   
+                // Console.WriteLine(input);
+                IList<string> digitList = [];          
+                foreach (char c in input)
+                {
+                    if (Char.IsDigit(c))
+                    {
+                        digitList.Add(c.ToString());
+                    }
+                }
+                int answer = int.Parse(digitList[0] + digitList.Last());
+                answerList.Add(answer);
+            }
+
+            foreach (int answer in answerList)
+            {
+                answerSum += answer;
+            }
+            return answerSum;
+        }
+    
+        static int Part02()
         {
             string filePath = @"C:\Users\ttse\adventofcode2023\day_01\Day01Input.txt";
             IEnumerable<string> inputList = File.ReadLines(filePath);
@@ -86,7 +126,9 @@ namespace Day01
             {
                 answerSum += answer;
             }
-            Console.WriteLine(answerSum);
+            return answerSum;
         }
     }
 }
+    
+

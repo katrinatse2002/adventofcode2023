@@ -11,12 +11,11 @@ namespace Day01
 
             Console.WriteLine("Part 1 Answer: " + part1Ans.ToString());
             Console.WriteLine("Part 2 Answer: " + part2Ans.ToString());
-
         }
         
         static int Part01()
         {
-            string filePath = @"C:\Users\ttse\adventofcode2023\day_01\Day01Input.txt";
+            string filePath = "Day01Input.txt";
             IEnumerable<string> inputList = File.ReadLines(filePath);
             IList<int> answerList = [];
             int answerSum = 0;
@@ -45,7 +44,7 @@ namespace Day01
     
         static int Part02()
         {
-            string filePath = @"C:\Users\ttse\adventofcode2023\day_01\Day01Input.txt";
+            string filePath = "Day01Input.txt";
             IEnumerable<string> inputList = File.ReadLines(filePath);
             // IEnumerable<string> inputList = new List<string> {"2fiveshtds4oneightsjg"};
             IList<string> parsedInputList = [];

@@ -87,12 +87,12 @@ namespace Day02
                     answerList.Add(gameID);
                 }
             }
-        foreach (int id in answerList)
-        {
-            // Console.WriteLine(id);
-            answerSum += id;
-        }
-        return answerSum;
+            foreach (int id in answerList)
+            {
+                // Console.WriteLine(id);
+                answerSum += id;
+            }
+            return answerSum;
         }
 
         static int Part02()
@@ -159,12 +159,12 @@ namespace Day02
                 }
 
             }
-        foreach (int number in answerList)
-        {
-            Console.WriteLine(number);
-            answerSum += number;
-        }
-        return answerSum;
+            foreach (int number in answerList)
+            {
+                Console.WriteLine(number);
+                answerSum += number;
+            }
+            return answerSum;
         
         }
     }

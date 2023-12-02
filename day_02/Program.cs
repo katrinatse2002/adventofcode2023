@@ -17,7 +17,7 @@ namespace Day02
         }
         static int Part01()
         {
-            string filePath = @"C:\Users\ttse\adventofcode2023\day_02\Day02Input.txt";
+            string filePath = "Day02Input.txt";
             IEnumerable<string> inputList = File.ReadLines(filePath);
             // IEnumerable<string> inputList = ["Game 1: 7 red, 5 green; 4 red, 16 green; 3 red, 11 green"];
             char[] separators = [':', ';', ','];
@@ -97,7 +97,7 @@ namespace Day02
 
         static int Part02()
         {
-            string filePath = @"C:\Users\ttse\adventofcode2023\day_02\Day02Input.txt";
+            string filePath = "Day02Input.txt";
             IEnumerable<string> inputList = File.ReadLines(filePath);
             // IEnumerable<string> inputList = ["Game 1: 4 blue, 7 red, 5 green; 3 blue, 4 red, 16 green; 3 red, 11 green"];
             char[] separators = [':', ';', ','];

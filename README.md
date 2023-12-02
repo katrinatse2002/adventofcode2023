@@ -11,3 +11,14 @@ Run each day's solution:
 cd day_<xx>
 dotnet run
 ```
+
+Add config with following format to launch.json to make debugger work:
+```bash
+{
+    "name": "C#: day_<xx>",
+    "type": "dotnet",
+    "request": "launch",
+    "projectPath": "${workspaceFolder}\\day_<xx>\\day_<xx>.csproj",
+    "launchConfigurationId": "TargetFramework=;day_<xx>"
+}
+```
